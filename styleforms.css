@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*<!-- ----------------------------------  FORM 1 ------------------------------------------------------ -->*/
+
+.form1 p {
+	font-style: italic;
+	margin-top: 2vh;
+}
+
+.form1 {
+	margin: auto;
+	width: 50vw;
+	padding: 2vh;
+}
+
+.form1 fieldset {
+	margin-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+.form1 legend {
+	margin: 2vh;
+}
+
+
+
+.form1 li {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2vh;
+
+}
+
+
+
+.form1 label {
+	display: inline-block;
+	width: 20%;
+}
+
+.form1 .red {
+	color: #ff0000;
+}
+
+.form1 input, select, textarea {
+	width: 70%;
+	padding: 1vh;
+}
+
+
+.form1 .textinput label {
+	vertical-align: top;
+}
+
+
+.form1 .animals {
+	display: inline-block;
+	width: 10%;
+	line-height: 1.5;
+	
+}
+
+
+.form1 .submit {
+	margin-top: 2vh;
+	width: 25%;
+	cursor: pointer;
+}
+
+

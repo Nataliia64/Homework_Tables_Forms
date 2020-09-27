@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeworkTablesForms</title>
+	<link rel="stylesheet" href="styleforms.css">
+</head>
+<body>
+<!-- ----------------------------------  FORM 1 ------------------------------------------------------ -->
+<form class="form1" action="#" method="get" name="contact_info" autocomplete="off">
+	<h1>Форма заявки на работу в зоопарке</h1>
+	<p>Пожалуйста, заполните форму. Обязательные поля помечены <span class="red">*</span></p>
+	<fieldset>
+		<legend>
+			Контактная информация
+		</legend>
+
+	<ul>
+
+	<li>
+	<label for="Name:">Имя<span class="red">*</span></label>
+    <input type="text" id="Name:" required name="username" pattern = "[A-Za-z0-9]{6,}">
+    </li>
+
+    <li>
+    <label for="telephone:">Телефон</label>
+    <input type="tel" placeholder="Телефон:" id="telephone:" required name="usertelephone" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+           formmethod="post">
+    </li>
+
+    <li>
+    <label for="email:">Email<span class="red">*</span></label>
+    <input type="email" required name="useremail">
+    </li>
+
+    </ul>
+	</fieldset>
+
+	<fieldset>
+		<legend>
+			Персональная информация
+		</legend>
+
+	<ul>
+
+	<li>
+	<label for="Age:">Возраст<span class="red">*</span></label>
+    <input type="text" id="Age" required name="userage">
+    </li>
+
+    <li>
+    	<label for="Gender">Пол</label>
+    	<select name=”Gender”>
+           <option>Man</option>
+           <option>Woman</option>
+           <option>Undefined</option>
+        </select>
+
+    </li>
+
+    <li class="textinput">
+    	<label for="personal">Перечислите Ваши личные качества</label>
+        <textarea name="personal" id="personal" cols="30" rows="5">
+
+    </textarea>
+    </li>
+
+    </ul>
+
+</fieldset>
+
+<fieldset>
+		<legend>
+			Выберите ваших любимых животных
+		</legend>
+
+	<ul>
+	<li class="animals"><input type="checkbox" id="zebra" value="зебра" name="useranimals"><label for="zebra">зебра</label></li>
+    <li class="animals"><input type="checkbox" id="cat" value="кошак" name="useranimals"><label for="cat">кошак</label></li>
+    <li class="animals"><input type="checkbox" id="anaconda" value="анаконда" name="useranimals"><label for="anaconda">анаконда</label></li>
+    <li class="animals"><input type="checkbox" id="human" value="человек" name="useranimals"><label for="human">человек</label></li>
+    <li class="animals"><input type="checkbox" id="elephant" value="слон" name="useranimals"><label for="elephant">слон</label></li>
+    <li class="animals"><input type="checkbox" id="antelope" value="антилопа" name="useranimals"><label for="antelope">антилопа</label></li>
+    <li class="animals"><input type="checkbox" id="dove" value="голубь" name="useranimals"><label for="dove">голубь</label></li>
+    <li class="animals"><input type="checkbox" id="crab" value="краб" name="useranimals"><label for="crab">краб</label></li><br><br>
+    </ul>
+</fieldset>
+
+<input class="submit" type="submit" name="go" value="Отправить информацию">
+
+</form>
+
+
+
+</body>
+</html>
